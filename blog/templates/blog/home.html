@@ -6,6 +6,10 @@
 </head>
 <body>
     <h1>Meu Primeiro Template</h1>
-    <h3>Autor: {{posts.autor}}</h3>
+    <ul>
+        {% for post in posts %}
+            <a href="{% url 'post_detail' post.id %}"> {{ post.titulo }} {{ post.autor }}</a>
+        {% endfor %}
+    </ul>
 </body>
 </html>
