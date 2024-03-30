@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  oracle-xe:
+    image: gvenzl/oracle-xe
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD}
+    volumes:
+      - oracle-volume:/opt/oracle/oradata
+    container_name: django_bootstrap5_oracle-xe
+
+
+volumes:
+  oracle-volume:
