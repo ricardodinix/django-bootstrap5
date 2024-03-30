@@ -12,4 +12,5 @@ class Post(models.Model):
     data_publicacao = models.DateTimeField(default=datetime.now())
 
     class Meta:
-        managed = True
+        verbose_name = 'Post'
+        verbose_name_plural = 'Posts'

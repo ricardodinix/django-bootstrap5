@@ -10,3 +10,5 @@ create sequence,
 create procedure,
 create trigger to django;
 ```
+
+Faça inserts nas tabelas a partir dos arquivos .sql em sql/
